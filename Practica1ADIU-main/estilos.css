@@ -1,0 +1,120 @@
+#column{
+    
+    flex-flow: row wrap ;
+    border-style: solid;
+    border-color:red;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra */
+    height: 12px; /* Alto de la barra en scroll horizontal */
+}
+
+/* Cambiar el fondo del track (el carril donde se desplaza) */
+::-webkit-scrollbar-track {
+    background: #555;
+    border-radius: 10px;
+}
+
+/* Cambiar el estilo del thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    background: rgb(45, 42, 42);
+    border-radius: 10px;
+}
+
+/* Cambiar el estilo del thumb cuando el usuario interactúa */
+::-webkit-scrollbar-thumb:hover {
+    background: #557;
+}
+
+/* Cambiar el botón de la scrollbar, si se usa */
+::-webkit-scrollbar-button {
+    background: #555;
+    display: none; /* Ocultar si no quieres que se muestren */
+}
+header{
+    position:fixed;
+    width:100%;
+}
+#encabezado{
+    
+    
+}
+.nav-link{
+    color:white;
+}
+
+
+#container{
+    border-color: red;
+  
+}
+
+.container-fluid{
+   /* background-color:black;*/
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('fondo_g.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+.bg-body-tertiary {
+    margin-top: -10px;
+    --bs-bg-opacity: 1;
+    background-color: black, var(--bs-bg-opacity) !important;
+}
+
+#contenedor{
+    position: relative;
+    border: 5px solid #212529;
+    backdrop-filter: blur(10px);
+    top: var(--header-height);
+    background-color: rgb(24, 24, 24);
+    height: 78%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow-y: auto;
+    padding-top: 4px;
+    padding-bottom:4px;
+
+}
+#buscador{
+    border-radius: 15px;
+    border: none;
+    background: white;
+    color: #181818;
+    padding-left: 30px;
+    outline: none;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/ios-search.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 5px;
+}
+#container2{
+    background-color: rgb(52, 52, 49);
+    border: 2px solid #212529;
+    border-radius: 8px;
+    /*position:relative;*/
+    /*height:25%;*/
+    height:400px;
+    margin-left: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
