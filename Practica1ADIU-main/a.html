@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll en Panel Derecho</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow: hidden; /* Evita scroll en toda la página */
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      flex-shrink: 0; /* Mantiene su tamaño fijo */
+    }
+
+    main {
+      display: flex;
+      flex: 1; /* Ocupa todo el espacio restante entre el header y el footer */
+      overflow: hidden; /* Evita que main genere scroll adicional */
+    }
+
+    .left-panel {
+      background-color: #f4f4f4;
+      width: 20%;
+      padding: 10px;
+      overflow-y: auto; /* (Opcional) Scroll si el contenido izquierdo es largo */
+    }
+
+    .right-panel {
+      background-color: #ddd;
+      flex: 1; /* Ocupa el espacio restante */
+      padding: 10px;
+      overflow-y: auto; /* Barra deslizadora vertical para contenido largo */
+      height:70vh;
+    }
+
+    footer {
+      background-color: #555;
+      flex-shrink: 0; /* Mantiene su tamaño fijo */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Página Web</h1>
+  </header>
+  <main>
+    <div class="left-panel">
+      <h2>Panel Izquierdo</h2>
+      <p>Contenido del panel izquierdo.</p>
+    </div>
+    <div class="right-panel">
+      <h2>Panel Derecho</h2>
+      <p>Este es un contenido muy largo para demostrar el comportamiento del scroll en el panel derecho. 
+         A continuación se incluye mucho más contenido como ejemplo:</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+         Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                                    Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                                        Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                                            Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor nec mauris gravida venenatis. 
+                                                                                                                                                                                                                                                                                                Phasellus euismod arcu vel metus ultricies, non vestibulum justo aliquam.</p>
+      <p>Contenido adicional para demostrar el scroll. Este panel debe mostrar una barra deslizadora si el contenido es demasiado largo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nulla eget diam finibus, 
+         ut facilisis ipsum posuere. Nullam eget magna vel risus fermentum cursus.</p>
+      <p>¡Y más contenido! Sigue añadiendo para verificar que el scroll funciona correctamente.</p>
+    </div>
+  </main>
+  <footer>
+    <p>Pie de página © 2024</p>
+  </footer>
+</body>
+</html>

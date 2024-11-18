@@ -82,7 +82,7 @@
   </head>
   <body>
     <header>
-      <nav id="cabecera" class="navbar navbar-expand-lg   navbar-dark bg-dark" style="position:relative">
+      <nav id="cabecera" class="navbar navbar-expand-lg   navbar-dark bg-dark" style="position:relative height:10px">
         <div class="container-fluid" >
           <a class="navbar-brand" href="#">
             <img src="logo.png" alt="Logo enterprise"width="200" height="100">
@@ -133,28 +133,32 @@
     </header>
     <script src="index.js"></script>
     
-    <div id="contenedor" class="container text-center">
-      <div  class="row .row-cols-auto">
-        <!-- <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-        <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-        <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-        <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div> -->
-        <div class="row">
+      <div class="content-left">
+        
+      </div>
+      <div id="contenedor" class="container text-center">
+        <div  class="row .row-cols-auto">
+          <!-- <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+          <d iv class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+          <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+          <div class="col"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div> -->
+          <div class="row">
               <div id="container2" class="col-12"></div>
               <!--<div id="container3" class="col-6"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
               <div id="column" class="col-3"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
               <div id="column" class="col-3"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>-->
-            </div>
-            <div class="row">
-              <div id="column" class="col-4"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-              <div id="column" class="col-8"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-            </div>
-            <div class="row">
-              <div id="column" class="col-6"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-              <div id="column" class="col-6"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
-            </div>
+              </div>
+              <div class="row">
+                <div id="column" class="col-4"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+                <div id="column" class="col-8"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+              </div>
+              <div class="row">
+                <div id="column" class="col-6"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+                <div id="column" class="col-6"><img src="Cats_Test0.png" alt="Gato" width="auto" height="auto"></div>
+          </div>
+        </div>
       </div>
-    </div>
+    
     <footer class="bg-dark text-light py-4">
       <div class="container">
         <div class="row">
