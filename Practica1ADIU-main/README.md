@@ -5,11 +5,11 @@
 
 En este proyecto se ha estudiado y graficado el top 100 canciones de Spotify. Dichos datos se han extraído de un dataset importado de Kaggle.
 
-Para poder realizarlo hemos utilizado varias herramientas:
-    - Para la creacion de la base de datos y la obtención de estos hemos usado php, xampp y MySql.
-    - Para la creación de las gráficas y los componentes dinámicos de la pagina web hemos usado JavaScript.
-    - Para la estructura interna de la página hemos usado html.
-    - Para la edición estética de los elementos css.
+Para poder realizarlo hemos utilizado varias herramientas:  
+    - Para la creacion de la base de datos y la obtención de estos hemos usado php, xampp y MySql.  
+    - Para la creación de las gráficas y los componentes dinámicos de la pagina web hemos usado JavaScript.  
+    - Para la estructura interna de la página hemos usado html.  
+    - Para la edición estética de los elementos css.  
 
 Para ejecutar el proyecto, al ser un archivo php, se ha de guardar en el directorio de xampp/htdocs/, tener configurado y activo el panel de control de xamp y abrirlo en el navegador con un url compuesto por "localhost/" más el nombre del archivo. En este caso sería "localhost/Practica1ADIU/index.php".
 
