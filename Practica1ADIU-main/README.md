@@ -1,7 +1,7 @@
 
 # Top 100 canciones de Spotify
 
-![Imagen de la pagina principal](/images/pagina_principal.png)
+![Imagen de la pagina principal](images/pagina_principal.png)
 
 En este proyecto se ha estudiado y graficado el top 100 canciones de Spotify. Dichos datos se han extraído de un dataset importado de Kaggle.
 
@@ -16,12 +16,12 @@ Para ejecutar el proyecto, al ser un archivo php, se ha de guardar en el directo
 Además de hacer las gráficas en la pantalla principal también se han implementado 3 pantallas extra. En estas tres funcionalidades adicionales se muestra por pantalla el top 5 de artistas, el top 5 albumes y el top 5 canciones de los datos que hemos usado. Con el objetivo de explorar diferentes funcionalidades de css y html hemos hecho que las imagenes de cada top se mantegan en movimiento sin que eso reduzca su accesibilidad.
 
     - Top 5 canciones:
-![Imagen del top canciones](/images/top_songs.png)
+![Imagen del top canciones](images/top_songs.png)
 
     - Top 5 artistas:
-![Imagen del top artistas](/images/top_singers.png)
+![Imagen del top artistas](images/top_singers.png)
 
     - Top 5 álbumes:
-![Imagen del top albumes](/images/top_albumes.png)
+![Imagen del top albumes](images/top_albumes.png)
 
 Este proyecto ha sido realizado por Aarón Fernández Ramón 45186605t y Mateu Torrens Morey 41618559j.
