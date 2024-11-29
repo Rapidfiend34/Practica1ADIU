@@ -15,9 +15,9 @@ Para poder realizarlo hemos utilizado varias herramientas:
     - Para la estructura interna de la página hemos usado html.  
     - Para la edición estética de los elementos css.  
 
-Para ejecutar el proyecto, al ser un archivo php, se ha de guardar en el directorio de xampp/htdocs/, tener configurado y activo el panel de control de xamp y abrirlo en el navegador con un url compuesto por "localhost/" más el nombre del archivo. En este caso sería "localhost/Practica1ADIU/index.php".
+Para ejecutar el proyecto, al ser un archivo php, se ha de guardar el proyecto en el directorio de xampp/htdocs/, tener configurado y activo el panel de control de xamp y abrirlo en el navegador con un url compuesto por "localhost/" + más el nombre del directorio restante hasta llegar al archivo "index.php". En nuestro caso sería "localhost/Practica1ADIU/index.php".
 
-Además de hacer las gráficas en la pantalla principal también se han implementado 3 pantallas extra. En estas tres funcionalidades adicionales se muestra por pantalla el top 5 de artistas, el top 5 albumes y el top 5 canciones de los datos que hemos usado. Con el objetivo de explorar diferentes funcionalidades de css y html hemos hecho que las imagenes de cada top se mantegan en movimiento sin que eso reduzca su accesibilidad.
+Además de hacer las gráficas en la pantalla principal también se han implementado 3 pantallas extra y una barra lateral para poder navegar por la página. La barra ha sido implementada a modo de necesidad para poder acceder a las pantallas extra. En estas tres funcionalidades adicionales se muestra por pantalla el top 5 de artistas, el top 5 albumes y el top 5 canciones de los datos que hemos usado. Con el objetivo de explorar diferentes funcionalidades de css y html hemos hecho que las imagenes de cada top se mantegan en movimiento sin que eso reduzca su accesibilidad.
 
     - Top 5 canciones:
 ![Imagen del top canciones](images/top_songs.png)
