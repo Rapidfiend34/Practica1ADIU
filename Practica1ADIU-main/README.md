@@ -1,5 +1,9 @@
 
+<div align="center">
+
 # Top 100 canciones de Spotify
+
+</div>
 
 ![Imagen de la pagina principal](images/pagina_principal.png)
 
